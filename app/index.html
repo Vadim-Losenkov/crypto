@@ -27,24 +27,24 @@
                   </a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">
+                  <a href="#featured" class="header__menu-link">
                     Featured
                   </a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">
+                  <a href="#service" class="header__menu-link">
                     Service
                   </a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">
+                  <a href="#pricing" class="header__menu-link">
                     Pricing
                   </a>
                 </li>
               </ul>
             </nav>
           </div>
-          <div class="header__account">
+          <div class="header__account head">
             <div class="header__account-item">
               <div class="header__account-language">
                 Eng
@@ -53,25 +53,45 @@
                 <a href="#" id="ru" class="header__account-language item">
                   Ru
                 </a>
-                <a href="#" id="uk" class="header__account-language item">
-                  Uk
-                </a>
-                <a href="#" id="by" class="header__account-language item">
-                  By
-                </a>
-                <a href="#" id="gb" class="header__account-language item">
-                  Eng
+              </div>
+            </div>
+            <a href="#login-popup" data-effect="mfp-zoom-in" class="popup header__account-button">
+              Login
+            </a>
+            <div class="header__btn">
+              <div class="header__btn-line first"></div>
+              <div class="header__btn-line main"></div>
+              <div class="header__btn-line last"></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="header__mobile">
+        <ul class="header__list">
+          <li class="header__list-item"><a href="#" class="header__list-link">Home</a></li>
+          <li class="header__list-item"><a href="#features" class="header__list-link">Featured</a></li>
+          <li class="header__list-item"><a href="#pricing" class="header__list-link">Service</a></li>
+          <li class="header__list-item"><a href="#pricing" class="header__list-link">Pricing</a></li>
+        </ul>
+        <div class="header__account">
+            <div class="header__account-item">
+              <div class="header__account-language">
+                Eng
+              </div>
+              <div class="header__account-language-items">
+                <a href="#" id="ru" class="header__account-language item">
+                  Ru
                 </a>
               </div>
             </div>
-            <a href="#login-popup" class="header__account-button">
+            <a href="#login-popup" data-effect="mfp-zoom-in" class="popup header__account-button">
               Login
             </a>
           </div>
-        </div>
       </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
       <section class="top">
         <div class="container">
           <div class="top__inner">
@@ -80,19 +100,19 @@
             </div>
             <div class="top__item">
               <h1 class="top__item-title">
-                Buy Crypto Now, to Get Rich In The Future 
+                Buy Crypto Now, to Get Rich In The Future
               </h1>
               <p class="top__item-description">
                 Crypto.qu is more than just a Crypto trading platform. It’s the best place to learn about crypto.
               </p>
-              <a href="#login-popup" class="top__item-button">
+              <a href="#login-popup" data-effect="mfp-zoom-in" class="popup top__item-button">
                 Get Started
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="featured">
+      <section class="featured" id="featured">
         <div class="container">
           <div class="featured__inner">
             <h2 class="featured__title title">
@@ -112,12 +132,12 @@
           <div class="description__inner">
             <div class="description__head">
               <h2 class="description__title title">
-                  Trusted <span><span>crypto platform</span></span>
-for sell, buy, and trade.
-                
+                Trusted <span><span>crypto platform</span></span>
+                for sell, buy, and trade.
+
               </h2>
               <p class="description__text">
-                  Crypto.qu is one of the best cryptocurrency exchange platforms. It has the fastest 0 transaction fees, data secure, support buying crypto with credit or debit card, and other advantages.
+                Crypto.qu is one of the best cryptocurrency exchange platforms. It has the fastest 0 transaction fees, data secure, support buying crypto with credit or debit card, and other advantages.
               </p>
             </div>
             <div class="description__box">
@@ -139,7 +159,7 @@ for sell, buy, and trade.
               </div>
               <div class="description__item">
                 <h5 class="description__item-title title-3">
-                  Support Credit & Debit Card 
+                  Support Credit & Debit Card
                 </h5>
                 <p class="description__item-text">
                   We have a new feature that support all crypto transaction a with credit and debit card
@@ -149,7 +169,7 @@ for sell, buy, and trade.
           </div>
         </div>
       </section>
-      <section class="list">
+      <section id="service" class="list">
         <div class="container">
           <div class="list__inner">
             <div class="list__item-image">
@@ -162,14 +182,14 @@ for sell, buy, and trade.
               <p class="list__item-description">
                 Crypto.qu is more than just a Crypto trading platform. It is the best place to buy, sell, trade and learn about crypto.
               </p>
-              <a href="#buy-popup" class="list__item-button">
+              <a href="#buy-popup" data-effect="mfp-zoom-in" class="popup list__item-button">
                 See More
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="pricing">
         <div class="container">
           <div class="price__inner">
             <h2 class="price__title title">
@@ -183,17 +203,17 @@ for sell, buy, and trade.
                 Save 35%
               </span>
               <div class="price__buttons-box">
-                <button class="price__button active">
+                <button class="price__button active" data-filter=".yearly">
                   Yearly
                 </button>
-                <button class="price__button">
+                <button class="price__button" data-filter=".monthly">
                   Monthly
                 </button>
               </div>
             </div>
-            <div class="price__tarifs">
+            <div class="price__tarifs mix monthly">
               <div class="price__tarif">
-                <h6 class="price__tarif-name">Free</h6>
+                <h6 class="price__tarif-name">Free 🔥</h6>
                 <div class="price__tarif-price">
                   <span class="main">0</span><span class="time">/ month</span>
                 </div>
@@ -202,12 +222,70 @@ for sell, buy, and trade.
                   <li class="price__tarif-item">Updated News</li>
                   <li class="price__tarif-item">2 Kinds of Crypto Portfolio</li>
                 </ul>
-                <a href="#buy-popup" class="price__tarif-button">
+                <a href="#buy-popup" data-effect="mfp-zoom-in" class="popup price__tarif-button">
                   <span>Get Now</span>
                 </a>
               </div>
               <div class="price__tarif">
-                <h6 class="price__tarif-name">Basic</h6>
+                <h6 class="price__tarif-name">Basic 💸</h6>
+                <div class="price__tarif-price">
+                  <span class="main">1</span><span class="time">/ month</span>
+                </div>
+                <ul class="price__tarif-list">
+                  <li class="price__tarif-item">Group Consulting</li>
+                  <li class="price__tarif-item">Updated News</li>
+                  <li class="price__tarif-item">2 Kinds of Crypto Portfolio</li>
+                </ul>
+                <a href="#buy-popup" data-effect="mfp-zoom-in" class="popup price__tarif-button">
+                  <span>Get Now</span>
+                </a>
+              </div>
+              <div class="price__tarif">
+                <h6 class="price__tarif-name">Premium 🤑</h6>
+                <div class="price__tarif-price">
+                  <span class="main">3</span><span class="time">/ month</span>
+                </div>
+                <ul class="price__tarif-list">
+                  <li class="price__tarif-item">Group Consulting</li>
+                  <li class="price__tarif-item">Updated News</li>
+                  <li class="price__tarif-item">2 Kinds of Crypto Portfolio</li>
+                </ul>
+                <a href="#buy-popup" data-effect="mfp-zoom-in" class="popup price__tarif-button">
+                  <span>Get Now</span>
+                </a>
+              </div>
+              <div class="price__tarif">
+                <h6 class="price__tarif-name">Unlimited 💰</h6>
+                <div class="price__tarif-price">
+                  <span class="main">5</span><span class="time">/ month</span>
+                </div>
+                <ul class="price__tarif-list">
+                  <li class="price__tarif-item">Group Consulting</li>
+                  <li class="price__tarif-item">Updated News</li>
+                  <li class="price__tarif-item">2 Kinds of Crypto Portfolio</li>
+                </ul>
+                <a href="#buy-popup" data-effect="mfp-zoom-in" class="popup price__tarif-button">
+                  <span>Get Now</span>
+                </a>
+              </div>
+            </div>
+            <div class="price__tarifs mix yearly">
+              <div class="price__tarif">
+                <h6 class="price__tarif-name">Free 🔥</h6>
+                <div class="price__tarif-price">
+                  <span class="main">0</span><span class="time">/ month</span>
+                </div>
+                <ul class="price__tarif-list">
+                  <li class="price__tarif-item">Group Consulting</li>
+                  <li class="price__tarif-item">Updated News</li>
+                  <li class="price__tarif-item">2 Kinds of Crypto Portfolio</li>
+                </ul>
+                <a href="#buy-popup" data-effect="mfp-zoom-in" class="popup price__tarif-button">
+                  <span>Get Now</span>
+                </a>
+              </div>
+              <div class="price__tarif">
+                <h6 class="price__tarif-name">Basic 💸</h6>
                 <div class="price__tarif-price">
                   <span class="main">10</span><span class="time">/ month</span>
                 </div>
@@ -216,12 +294,12 @@ for sell, buy, and trade.
                   <li class="price__tarif-item">Updated News</li>
                   <li class="price__tarif-item">2 Kinds of Crypto Portfolio</li>
                 </ul>
-                <a href="#buy-popup" class="price__tarif-button">
+                <a href="#buy-popup" data-effect="mfp-zoom-in" class="popup price__tarif-button">
                   <span>Get Now</span>
                 </a>
               </div>
               <div class="price__tarif">
-                <h6 class="price__tarif-name">Premium</h6>
+                <h6 class="price__tarif-name">Premium 🤑</h6>
                 <div class="price__tarif-price">
                   <span class="main">30</span><span class="time">/ month</span>
                 </div>
@@ -230,12 +308,12 @@ for sell, buy, and trade.
                   <li class="price__tarif-item">Updated News</li>
                   <li class="price__tarif-item">2 Kinds of Crypto Portfolio</li>
                 </ul>
-                <a href="#buy-popup" class="price__tarif-button">
+                <a href="#buy-popup" data-effect="mfp-zoom-in" class="popup price__tarif-button">
                   <span>Get Now</span>
                 </a>
               </div>
               <div class="price__tarif">
-                <h6 class="price__tarif-name">Unlimited</h6>
+                <h6 class="price__tarif-name">Unlimited 💰</h6>
                 <div class="price__tarif-price">
                   <span class="main">40</span><span class="time">/ month</span>
                 </div>
@@ -244,7 +322,7 @@ for sell, buy, and trade.
                   <li class="price__tarif-item">Updated News</li>
                   <li class="price__tarif-item">2 Kinds of Crypto Portfolio</li>
                 </ul>
-                <a href="#buy-popup" class="price__tarif-button">
+                <a href="#buy-popup" data-effect="mfp-zoom-in" class="popup price__tarif-button">
                   <span>Get Now</span>
                 </a>
               </div>
@@ -252,14 +330,174 @@ for sell, buy, and trade.
           </div>
         </div>
       </section>
-    </main>
+      <section class="testimonials">
+        <div class="container">
+          <div class="testimonials__inner">
+            <div class="testimonials__item">
+              <h2 class="testimonials__title title">
+                What our Million Smart <span><span>User Says.</span></span>
+              </h2>
+              <p class="testimonials__description">
+                More than one million users trust us to sell, buy, and trade the cryptocurrencies in Crypto.qu
+              </p>
+              <a href="#buy-popup" data-effect="mfp-zoom-in" class="popup testimonials__button">
+                See More
+              </a>
+            </div>
+            <div class="testimonials__box">
+              <img src="images/user.png" alt="">
+              <div class="testimonials__block">
+                <blockquote class="testimonials__block-text">
+                  “This is really for millennials. Not complicated, informative but clean. Fluid is also a transition. The investment manager does a lot. Now only avrist, pinnacle, simas, majoris.”
+                </blockquote>
+                <cite class="testimonials__block-author">
+                  Angelina Jelly 😍
+                </cite>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main> -->
     <footer class="footer">
-
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__column">
+            <div class="footer__logo logo">
+              <img src="images/logo.svg" alt="">
+            </div>
+            <p class="footer__description">
+              Crypto.qu is the best place to learn about crypto.
+            </p>
+            <div class="footer__social">
+              <img src="images/social-1.svg" alt="">
+              <img src="images/social-2.svg" alt="">
+              <img src="images/social-3.svg" alt="">
+            </div>
+          </div>
+          <div class="footer__column">
+            <h6 class="footer__column-title">
+              Menu
+            </h6>
+            <a href="#" class="footer__column-link">
+              Home
+            </a>
+            <a href="#" class="footer__column-link">
+              Featured
+            </a>
+            <a href="#" class="footer__column-link">
+              Pricing
+            </a>
+          </div>
+          <div class="footer__column">
+            <h6 class="footer__column-title">
+              Services
+            </h6>
+            <a href="#" class="footer__column-link">
+              Free Administration
+            </a>
+            <a href="#" class="footer__column-link">
+              Data Secure
+            </a>
+            <a href="#" class="footer__column-link">
+              Credit Card Support
+            </a>
+            <a href="#" class="footer__column-link">
+              Debit Card Support
+            </a>
+          </div>
+          <div class="footer__column">
+            <h6 class="footer__column-title">
+              Further Information
+            </h6>
+            <a href="#" class="footer__column-link">
+              Terms & Conditions
+            </a>
+            <a href="#" class="footer__column-link">
+              Privacy Policy
+            </a>
+          </div>
+          <div class="footer__column">
+            <h6 class="footer__column-title">
+              Get App
+            </h6>
+            <a href="#" class="footer__column-link">
+              App Store
+            </a>
+            <a href="#" class="footer__column-link">
+              Google Play Store
+            </a>
+          </div>
+        </div>
+        <div class="footer__copy">
+          Copyright © 2021 Crypto.qu. All Rights Reserved.
+        </div>
+      </div>
     </footer>
   </div>
-
+  <a class="scroll-top" href="#"></a>
+  <div class="over"></div>
+  
+  <div class="popups">
+    <div id="login-popup" class="white-popup mfp-with-anim mfp-hide">
+      <h2 class="top-popup__title">LaslesVPN</h2>
+      <p class="top-popup__text">
+        Оформить подписку на 1 месяц за $10?
+      </p>
+      <input class="top-popup__input" type="text" placeholder="введите ваш IP: " />
+      <button class="top-popup__button close-btn-i">
+        оформить
+      </button>
+    </div>
+    <div id="l-popup" class="white-popup mfp-with-anim mfp-hide">
+      <h2 class="top-popup__title">LaslesVPN</h2>
+      <p class="top-popup__text">
+        Вход в аккаунт: 
+      </p>
+      <input class="top-popup__input" type="text" placeholder="введите ваш nickname: " />
+      <input class="top-popup__input" type="password" placeholder="введите ваш Пароль: " />
+      <button class="top-popup__button close-btn-i">
+        Войти
+      </button>
+    </div>
+    <div id="signup-popup" class="white-popup mfp-with-anim mfp-hide">
+      <h2 class="top-popup__title">LaslesVPN</h2>
+      <p class="top-popup__text">
+        Регистрация: 
+      </p>
+      <input class="top-popup__input signup" type="text" placeholder="придумайте nickname: " />
+      <input class="top-popup__input" type="password" placeholder="придумайте пароль: " />
+      <input class="top-popup__input" type="password" placeholder="повторите пароль: " />
+      <button class="top-popup__button close-btn-i">
+        Зарегистрироваться
+      </button>
+    </div>
+    <div id="buy-popup" class="white-popup mfp-with-anim mfp-hide">
+      <h2 class="top-popup__title">LaslesVPN</h2>
+      <p class="top-popup__text">
+        Покупка тарифа
+      </p>
+      <input class="top-popup__input signup" type="text" placeholder="комментарий к покупке (опционально): " />
+      <input class="top-popup__input" type="text" value="$10" placeholder="сумма: " />
+      <button class="top-popup__button close-btn-i">
+        Оплатить
+      </button>
+    </div>
+    <div id="sub-popup" class="white-popup mfp-with-anim mfp-hide">
+      <h2 class="top-popup__title">LaslesVPN</h2>
+      <p class="top-popup__text">
+        Подписка на рассылку
+      </p>
+      <input class="top-popup__input" type="text" placeholder="Введите email: " />
+      <button class="top-popup__button close-btn-i">
+        подписаться
+      </button>
+    </div>
+  </div>
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/popup.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 </html>
