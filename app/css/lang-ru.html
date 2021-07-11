@@ -70,7 +70,7 @@
       <div class="header__mobile">
         <ul class="header__list">
           <li class="header__list-item"><a href="#" class="header__list-link">Home</a></li>
-          <li class="header__list-item"><a href="#features" class="header__list-link">Featured</a></li>
+          <li class="header__list-item"><a href="#featured" class="header__list-link">Featured</a></li>
           <li class="header__list-item"><a href="#pricing" class="header__list-link">Service</a></li>
           <li class="header__list-item"><a href="#pricing" class="header__list-link">Pricing</a></li>
         </ul>
@@ -91,7 +91,7 @@
           </div>
       </div>
     </header>
-    <!-- <main class="main">
+    <main class="main">
       <section class="top">
         <div class="container">
           <div class="top__inner">
@@ -134,7 +134,6 @@
               <h2 class="description__title title">
                 Trusted <span><span>crypto platform</span></span>
                 for sell, buy, and trade.
-
               </h2>
               <p class="description__text">
                 Crypto.qu is one of the best cryptocurrency exchange platforms. It has the fastest 0 transaction fees, data secure, support buying crypto with credit or debit card, and other advantages.
@@ -203,7 +202,7 @@
                 Save 35%
               </span>
               <div class="price__buttons-box">
-                <button class="price__button active" data-filter=".yearly">
+                <button class="price__button" data-filter=".yearly">
                   Yearly
                 </button>
                 <button class="price__button" data-filter=".monthly">
@@ -358,7 +357,7 @@
           </div>
         </div>
       </section>
-    </main> -->
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
@@ -370,9 +369,15 @@
               Crypto.qu is the best place to learn about crypto.
             </p>
             <div class="footer__social">
-              <img src="images/social-1.svg" alt="">
-              <img src="images/social-2.svg" alt="">
-              <img src="images/social-3.svg" alt="">
+              <a class="footer__social-link" href="https://instagram.com">
+                <img src="images/social-1.svg" alt="">
+              </a>
+              <a class="footer__social-link" href="https://twitter.com">
+                <img src="images/social-2.svg" alt="">
+              </a>
+              <a class="footer__social-link" href="https://facebook.com">
+                <img src="images/social-3.svg" alt="">
+              </a>
             </div>
           </div>
           <div class="footer__column">
@@ -440,27 +445,29 @@
   
   <div class="popups">
     <div id="login-popup" class="white-popup mfp-with-anim mfp-hide">
-      <h2 class="top-popup__title">LaslesVPN</h2>
+      <img class="popup-logo" src="images/logo.svg" alt="">
       <p class="top-popup__text">
-        Оформить подписку на 1 месяц за $10?
-      </p>
-      <input class="top-popup__input" type="text" placeholder="введите ваш IP: " />
-      <button class="top-popup__button close-btn-i">
-        оформить
-      </button>
-    </div>
-    <div id="l-popup" class="white-popup mfp-with-anim mfp-hide">
-      <h2 class="top-popup__title">LaslesVPN</h2>
-      <p class="top-popup__text">
-        Вход в аккаунт: 
+        Вход в аккаунт
       </p>
       <input class="top-popup__input" type="text" placeholder="введите ваш nickname: " />
-      <input class="top-popup__input" type="password" placeholder="введите ваш Пароль: " />
-      <button class="top-popup__button close-btn-i">
-        Войти
-      </button>
+      <input class="top-popup__input" type="password" placeholder="введите ваш пароль: " />
+      <a href="#login-error-popup" data-effect="mfp-zoom-in" class="popup top-popup__button close-btn-i">
+        Вход
+      </a>
     </div>
-    <div id="signup-popup" class="white-popup mfp-with-anim mfp-hide">
+    <div id="login-error-popup" class="white-popup mfp-with-anim mfp-hide">
+      <img class="popup-logo" src="images/logo.svg" alt="">
+      <p class="top-popup__text">
+        Неверное имя или пароль!
+      </p>
+    </div>
+    <div id="buy-popup" class="white-popup mfp-with-anim mfp-hide">
+      <img class="popup-logo" src="images/logo.svg" alt="">
+      <p class="top-popup__text">
+        К сожалению чейчас это действие невозможно. Попрабуйте сделать это через несколько часов!
+      </p>
+    </div>
+    <!-- <div id="signup-popup" class="white-popup mfp-with-anim mfp-hide">
       <h2 class="top-popup__title">LaslesVPN</h2>
       <p class="top-popup__text">
         Регистрация: 
@@ -492,7 +499,7 @@
       <button class="top-popup__button close-btn-i">
         подписаться
       </button>
-    </div>
+    </div> -->
   </div>
 
   <script src="js/jquery.min.js"></script>

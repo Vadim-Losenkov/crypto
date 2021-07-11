@@ -115,6 +115,11 @@
     font-size: 12px;
     line-height: 15px;
     border: 1px solid rgba(42, 39, 64, 0.5);
+    transition: all .3s;
+    &:hover {
+      background-color: #2A2740;
+      color: #fff;
+    }
   }
 }
 
@@ -261,6 +266,11 @@
     font-size: 12px;
     line-height: 15px;
     border: 1px solid rgba(42, 39, 64, 0.5);
+    transition: all .3s;
+    &:hover {
+      background-color: #2A2740;
+      color: #fff;
+    }
   }
 }
 
@@ -279,12 +289,12 @@
   }
   &__buttons {
     margin: 0 auto;
-    max-width: 350px;
+    max-width: 310px;
     position: relative;
     margin-bottom: 72px;
   }
   &__buttons-box {
-    max-width: 350px;
+    max-width: 310px;
     background: #F2F1F8;
     padding: 6px;
     border-radius: 40px;
@@ -507,6 +517,11 @@
     font-size: 12px;
     line-height: 15px;
     border: 1px solid rgba(42, 39, 64, 0.5);
+    transition: all .3s;
+    &:hover {
+      background-color: #2A2740;
+      color: #fff;
+    }
   }
   &__box img {
     z-index: -1;
@@ -554,7 +569,6 @@
 
 .footer {
   padding-bottom: 50px;
-  margin-top: 500px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -598,5 +612,45 @@
     margin-top: 50px;
   }
 }
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  z-index: 2000;
+}
+
+.top-popup {
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__input {
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid  #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+    &.signup {
+      margin-bottom: 35px;
+    }
+  }
+  &__button {
+    background-color: #2A2740;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    display: inline-block;
+  }
+}
+.popup-logo {
+    margin-bottom: 20px;
+  }
 
 @import "media";
